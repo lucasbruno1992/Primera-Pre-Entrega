@@ -163,7 +163,7 @@ switch (cantidadDeCuotas) {
 //FIND()
 function pedirDatosAlUsuario() {
     const nombreABuscar = prompt(`Ingrese el producto que quiere buscar: `);
-    buscarProducto(nombreABuscar);
+    buscarProducto(nombreABuscar.toLocaleLowerCase());
 }
 
 function buscarProducto(producto) {
@@ -178,7 +178,7 @@ pedirDatosAlUsuario();
 //FILTER()
 function pedirDatosAlUsuarioParaFiltrar() {
     const nombreProductoAFiltrar = prompt(`Ingrese el producto a filtrar`);
-    filtrarProducto(nombreProductoAFiltrar);
+    filtrarProducto(nombreProductoAFiltrar.toLocaleLowerCase());
 }
 
 function filtrarProducto(producto) {
